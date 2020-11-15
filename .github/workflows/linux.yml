@@ -8,7 +8,7 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: python:slim
+    container: python
     steps:
     - uses: fastai/workflows/ssh@master
       with:
