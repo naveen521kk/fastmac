@@ -19,6 +19,6 @@ jobs:
           python -m pip install requests
           python -c "import requests;a=requests.get('https://github.com/naveen521kk/manimpango/releases/download/v0.0.2/wheels-linux.zip');b=open('linux.zip','wb');b.write(a.content)"          
           python -m zipfile -e linux.zip build
-          python -m pip install --no-index --find-links build manimpango
+          python -m pip install --no-index --find-links build/wheelhouse manimpango
           python -c "import manimpango"
   
