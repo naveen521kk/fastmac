@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        cont: ['python:3.8.6-alpine','python:3.6.7-alpine','python:3.9.1-alpine']
+        cont: ['python:3.8.6-buster','python:3.6.7-buster','python:3.9.1-buster']
     container: ${{matrix.cont}}
     steps:
       - run: |
